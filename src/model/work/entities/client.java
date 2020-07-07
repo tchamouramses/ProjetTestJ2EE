@@ -11,6 +11,15 @@ public class client {
 	public client() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+
+	public client(int id) {
+		super();
+		this.id = id;
+	}
+
+
 
 	public String getNoms() {
 		return noms;

@@ -6,10 +6,16 @@ public class chambre {
 	private String nature;
 	private double prix;
 	private int id;
+	private int id_cite;
 	private float surface;
 	
 	public chambre() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public chambre(int id) {
+		super();
+		this.id = id;
 	}
 
 	public String getNature() {
@@ -42,6 +48,14 @@ public class chambre {
 
 	public void setSurface(float surface) {
 		this.surface = surface;
+	}
+
+	public int getId_cite() {
+		return id_cite;
+	}
+
+	public void setId_cite(int id_cite) {
+		this.id_cite = id_cite;
 	}
 	
 	

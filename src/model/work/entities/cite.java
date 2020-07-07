@@ -1,13 +1,18 @@
 package model.work.entities;
 
-import java.sql.Date;
 
 public class cite {
 
 	private String bailleur;
-	private Date nbChambre;
+	private int nbChambre;
 	private int id;
 	
+	
+	public cite(int id) {
+		super();
+		this.id = id;
+	}
+
 	public cite() {
 		// TODO Auto-generated constructor stub
 	}
@@ -20,11 +25,11 @@ public class cite {
 		this.bailleur = bailleur;
 	}
 
-	public Date getNbChambre() {
+	public int getNbChambre() {
 		return nbChambre;
 	}
 
-	public void setNbChambre(Date nbChambre) {
+	public void setNbChambre(int nbChambre) {
 		this.nbChambre = nbChambre;
 	}
 

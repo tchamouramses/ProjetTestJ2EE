@@ -14,6 +14,11 @@ public class Reservation {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Reservation(int id) {
+		super();
+		this.id = id;
+	}
+
 	public int getId_client() {
 		return id_client;
 	}
