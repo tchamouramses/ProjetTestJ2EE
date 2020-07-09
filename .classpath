@@ -14,5 +14,7 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/Users/Poste de travail/Desktop/Projjet/dev/projet Ems/EMS/dist/lib/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/apache-tomcat-7.0.12/webapps/examples/WEB-INF/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/apache-tomcat-7.0.12/webapps/examples/WEB-INF/lib/standard.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
