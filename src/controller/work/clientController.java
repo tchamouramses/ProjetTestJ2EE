@@ -2,6 +2,8 @@ package controller.work;
 
 import java.io.IOException;
 import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -21,19 +23,29 @@ public class clientController extends HttpServlet{
 	}
 	
 	@Override
-	public void doPost(HttpServletRequest request, HttpServletResponse response){
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		client = new clientImpl();
-
 		String nom = request.getParameter("nom");
-		Date date = new Date(Date.parse(request.getParameter("date")));
-		String lieu = request.getParameter("lieu");
-		if(addClient(nom, lieu, date)){
-			request.setAttribute("Adding_respose", "Ajout effectué avec succès");
-		}else{
-			request.setAttribute("Adding_respose", "Echec d'ajout");
+		System.out.println(nom);
+		String date = request.getParameter("date");
+		SimpleDateFormat spl = new SimpleDateFormat();
+		Date d = new Date(System.currentTimeMillis());
+		try {
+			d = (Date) spl.parse(date);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 		
+		String lieu = request.getParameter("lieu");
+		if(addClient(nom, lieu, d)){
+			request.setAttribute("reponse", "Ajout effectué avec succès");
+		}else{
+			request.setAttribute("reponse", "Echec d'ajout");
+		}
+		
+		this.doGet(request, response);
 		
 	}
 	

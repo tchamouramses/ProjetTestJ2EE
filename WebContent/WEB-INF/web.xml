@@ -16,4 +16,12 @@
 		<servlet-name>clientController</servlet-name>
 		<url-pattern>/clients</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>AccueilController</servlet-name>
+		<servlet-class>controller.work.AccueilController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccueilController</servlet-name>
+		<url-pattern>/accueil</url-pattern>
+	</servlet-mapping>
 </web-app>
