@@ -22,7 +22,8 @@ public class chambreImpl implements chambreInterface{
 	}
 	
 	@Override
-	public boolean add(chambre e) {con = other.directConnection();
+	public boolean add(chambre e) {
+		con = other.directConnection();
 	try {
 
 		String sql = "INSERT INTO chambre(nature,prix,surface, id_cite) VALUES(?,?,?,?)";

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -24,35 +24,25 @@
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>my first jsp page</title>
+<title>Ajout des chambres</title>
 </head>
 <body>
+	<h1>je t'aime mon amour whitney</h1>
 	<form action="/chambre" method = "POST">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nom</label>
-                    <input type="email" name = "nom" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <label for="exampleInputEmail1">Nature</label>
+                    <input type="email" name = "nature" class="form-control" id="nature" placeholder="Enter nature">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Date</label>
-                    <input type="date" name = "date" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">Prix</label>
+                    <input type="text" name = "prix" class="form-control" id="prix" placeholder="prix">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
-                      </div>
-                    </div>
+                    <label for="exampleInputFile">Surface</label>
+                        <input type="text" placeholder="surface" name = "surface" class="form-control" id="surface">
                   </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
+                  
                 </div>
                 <!-- /.card-body -->
 

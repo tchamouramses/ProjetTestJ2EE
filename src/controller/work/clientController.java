@@ -32,9 +32,7 @@ public class clientController extends HttpServlet{
 		}else{
 			request.setAttribute("Adding_respose", "Echec d'ajout");
 		}
-		
-		
-		
+
 	}
 	
 	public boolean addClient(String nom, String lieu, Date date){
