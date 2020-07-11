@@ -1,6 +1,5 @@
 package model.work.entities;
 
-import java.sql.Date;
 
 public class chambre {
 	private String nature;

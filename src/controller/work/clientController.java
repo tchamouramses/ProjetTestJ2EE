@@ -44,9 +44,7 @@ public class clientController extends HttpServlet{
 		}else{
 			request.setAttribute("reponse", "Echec d'ajout");
 		}
-		
 		this.doGet(request, response);
-		
 	}
 	
 	public boolean addClient(String nom, String lieu, Date date){
