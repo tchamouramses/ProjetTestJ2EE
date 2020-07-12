@@ -141,7 +141,7 @@ public class clientImpl implements clientInterface {
 		con = other.directConnection();
 		try {
 
-			String sql = "SELECT * FROM client";
+			String sql = "SELECT * FROM client ORDER BY id DESC";
 			PreparedStatement p = (PreparedStatement) con.prepareStatement(sql);
 			ResultSet r = p.executeQuery();
 			while(r.next()){

@@ -29,7 +29,6 @@ public class OtherFonction {
 					.getConnection(
 							"jdbc:mysql://localhost:3306/work?zeroDateTimeBehavior=convertToNull",
 							"root", "");
-			System.out.println("connexion effectuer");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

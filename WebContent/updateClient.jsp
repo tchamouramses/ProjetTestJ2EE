@@ -102,8 +102,8 @@
 							class="nav-link"> <i class="far fa-circle nav-icon"></i>
 								<p>liste des clients</p>
 						</a></li>
-						<li class="nav-item"><a href="clients?type=add" class="nav-link">
-								<i class="far fa-circle nav-icon"></i>
+						<li class="nav-item"><a href="clients?type=add"
+							class="nav-link"> <i class="far fa-circle nav-icon"></i>
 								<p>Ajout des clients</p>
 						</a></li>
 					</ul></li>
@@ -168,28 +168,28 @@
 			<div class="col-md-12">
 				<div class="card card-primary">
 					<div class="card-header">
-						<h3 class="card-title" align="center">Ajout D'un Client</h3>
+						<h3 class="card-title" align="center">Modification D'un Client</h3>
 					</div>
-					<form action="clients?type=add" method="POST">
+					<form action="clients?type=up" method="POST">
 						<div class="card-body">
 							<div class="form-group">
 								<label for="nom">Nom</label> <input type="text" name="nom"
 									class="form-control" id="nom" placeholder="Enter Nom"
-									required="required">
+									required="required" value="${client.noms }">
 							</div>
 							<div class="form-group">
 								<label for="date">Date</label> <input type="date"
 									required="required" name="date" class="form-control" id="date"
-									placeholder="Date">
+									placeholder="Date" value="${client.date }">
 							</div>
 							<div class="form-group">
 								<label for="lieu">Lieu Naissance</label> <input
 									required="required" type="text" class="form-control" id="lieu"
-									name="lieu" placeholder="Lieu de naissance">
+									name="lieu" placeholder="Lieu de naissance" value="${client.lieu }">
 							</div>
 						</div>
 						<div class="card-footer">
-							<button type="submit" class="btn btn-primary">Valider</button>
+							<button type="submit" class="btn btn-primary">Modifier</button>
 						</div>
 					</form>
 				</div>
