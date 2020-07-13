@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 <!-- Font Awesome -->
@@ -38,7 +39,7 @@
 <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Ajout des chambres</title>
+<title>Ajout des cites</title>
 </head>
 <body>
 	<div class="wrapper">
@@ -172,26 +173,21 @@
 					<div class="card-header">
 						<h3 class="card-title">
 							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">AJOUT D'UNE CHAMBRE</font>
+								style="vertical-align: inherit;">AJOUT D'UNE CITE</font>
 						</h3>
 					</div>
-					<form action="chambre" method="POST">
+					<form action="cite" method="POST">
 						<div class="card-body">
 							<div class="form-group">
-								<label for="nature">Nature</label> <input type="text"
-									name="nature" class="form-control" id="nature"
-									placeholder="nature">
+								<label for="nature">bailleur</label> <input type="text"
+									name="bailleur" class="form-control" id="bailleur"
+									placeholder="bailleur">
 							</div>
 							<div class="form-group">
-								<label for="prix">Prix</label> <input type="text" name="prix"
-									class="form-control" id="prix" placeholder="prix">
+								<label for="prix">nbChambre</label> <input type="text" name="nbChambre"
+									class="form-control" id="prix" placeholder="nbChambre">
 							</div>
-							<div class="form-group">
-								<label for="surface">Surface</label> <input type="text"
-									class="form-control" id="surface" name="surface"
-									placeholder="surface">
-
-							</div>
+							
 						</div>
 						<div class="card-footer">
 							<button type="submit" class="btn btn-primary">Valider</button>
