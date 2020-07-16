@@ -41,4 +41,13 @@
 		<servlet-name>ReservationController</servlet-name>
 		<url-pattern>/res</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>citeController</servlet-name>
+		<servlet-class>controller.work.citeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>citeController</servlet-name>
+		<url-pattern>/cite</url-pattern>
+	</servlet-mapping>
 </web-app>
