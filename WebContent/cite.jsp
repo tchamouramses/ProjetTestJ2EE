@@ -184,8 +184,8 @@
 									placeholder="bailleur">
 							</div>
 							<div class="form-group">
-								<label for="prix">nbChambre</label> <input type="text" name="nbChambre"
-									class="form-control" id="prix" placeholder="nbChambre">
+								<label for="prix">Nombre de chambres</label> <input type="text" name="nb"
+									class="form-control" id="prix" placeholder="nombre de chambre">
 							</div>
 							
 						</div>

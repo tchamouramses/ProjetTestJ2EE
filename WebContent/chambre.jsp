@@ -99,12 +99,13 @@
 						</p>
 				</a>
 					<ul class="nav nav-treeview">
-						<li class="nav-item"><a href="../layout/top-nav.html"
+						<li class="nav-item"><a href="clients?type=show"
 							class="nav-link"> <i class="far fa-circle nav-icon"></i>
 								<p>liste des clients</p>
 						</a></li>
-						<li class="nav-item"><a href="clients" class="nav-link">
-								<i class="far fa-circle nav-icon"></i>
+						<li class="nav-item"><a href="clients?type=add"
+							class="nav-link"> <i class="far fa-circle nav-icon"></i>
+
 								<p>Ajout des clients</p>
 						</a></li>
 					</ul></li>
@@ -166,6 +167,7 @@
 		<!-- /.sidebar --> </aside>
 
 		<div class="content-wrapper" style="min-height: 1416.81px;">
+		     
 			<div class="col-md-12">
 				<!-- general form elements -->
 				<div class="card card-primary">
@@ -199,6 +201,7 @@
 					</form>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 
