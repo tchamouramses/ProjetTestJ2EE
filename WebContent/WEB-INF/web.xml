@@ -32,4 +32,13 @@
 		<servlet-name>chambreController</servlet-name>
 		<url-pattern>/chambre</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReservationController</servlet-name>
+		<servlet-class>controller.work.ReservationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReservationController</servlet-name>
+		<url-pattern>/res</url-pattern>
+	</servlet-mapping>
 </web-app>
